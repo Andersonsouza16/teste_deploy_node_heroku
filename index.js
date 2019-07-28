@@ -4,7 +4,9 @@ const app = express();
 
 
 app.get('/', (req, res)=>{
-	res.send('teste ok!');
+	res.send({
+		messagem: 'Deploy do app ok!'
+	});
 });
 
 //const port = process.env.PORT || 3000;
